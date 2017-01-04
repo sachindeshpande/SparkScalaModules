@@ -1,0 +1,2 @@
+spark-submit --class com.cloudera.sparkwordcount.ScalaCSVCalculator --master local --deploy-mode client --executor-memory 1g --name wordcount --conf "spark.app.id=wordcount" sparkwordcount-0.0.1-SNAPSHOT.jar hdfs://quickstart.cloudera:8020/user/cloudera/inputdata4.csv 1
+
